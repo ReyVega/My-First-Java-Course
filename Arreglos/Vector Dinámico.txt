@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Vector_dinamico{
+  public static void main(String args[]){
+  
+    Scanner in = new Scanner(System.in);
+    int tamaño = 0;
+
+    System.out.print("¿Cuántos espacios quieres tener en tu arreglo?: ");
+    tamaño = in.nextInt();
+    
+    int numeros[] = new int[tamaño];
+
+    for(int i = 0; i < numeros.length; i++){
+      System.out.print("¿Qué numéro quieres ingresar en la posición " + (i + 1) + " ?: ");
+      numeros[i] = in.nextInt();  
+    }
+    
+    for(int i = 0; i < numeros.length; i++){
+      System.out.print("[" + numeros[i] + "]");
+    }
+ }
+}

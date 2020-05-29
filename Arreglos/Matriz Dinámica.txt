@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Matriz_dinamica{
+  public static void main(String args[]){
+  
+    Scanner in = new Scanner(System.in);
+    int filas = 0, columnas = 0, contador = 1;
+
+    System.out.print("¿Cuántas filas quieres que tenga tu matriz?: ");
+    filas = in.nextInt();
+
+    System.out.print("¿Cuántas columnas quieres que tenga tu matriz?: ");
+    columnas = in.nextInt();
+
+    int numeros[][] = new int[filas][columnas];
+
+    for(int j = 0; j < filas; j++){
+      for(int i = 0; i < columnas; i++){
+        numeros[j][i] = contador;
+        contador++;
+        System.out.print("[" + numeros[j][i] + "]");
+      }
+    System.out.println("");
+    }
+ }
+}

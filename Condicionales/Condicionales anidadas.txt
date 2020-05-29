@@ -1,0 +1,25 @@
+public class Operaciones{
+  public static void main(String args[]){
+    
+    int operador = 1;
+    int num_1 = 8;
+    int num_2 = 4;
+    int resultado = 0;
+    
+    if(operador == 1){
+       resultado = num_1 + num_2;
+       System.out.println("El resultado de la suma es: " + resultado);
+    } else if(operador == 2) {
+       resultado = num_1 - num_2;
+       System.out.println("El resultado de la resta es: " + resultado);
+    }else if(operador == 3) {
+       resultado = num_1 * num_2;
+       System.out.println("El resultado de la multiplicación es: " + resultado);
+    }else if(operador == 4){
+       resultado = num_1 / num_2;
+       System.out.println("El resultado de la división es: " + resultado);
+    } else {
+       System.out.println("La opción que elegiste no existe");
+    }
+ }
+}

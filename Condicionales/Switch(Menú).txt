@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Switch{
+  public static void main(String args[]){
+  
+    Scanner in = new Scanner(System.in);
+    int num_1 = 0, num_2 = 0, resultado = 0, parametro = 0;
+    
+    System.out.println("******************");
+    System.out.println("*1.Suma          *");
+    System.out.println("*2.Resta         *");
+    System.out.println("*3.Multiplicación*");
+    System.out.println("*4.División      *");
+    System.out.println("******************");
+    System.out.println("");
+
+    System.out.print("¿Cuál es tu parámetro? ");
+    parametro= in.nextInt();
+    System.out.println("");
+
+    System.out.print("¿Cuál es tu primer número? ");
+    num_1 = in.nextInt();
+    System.out.println("");
+
+    System.out.print("¿Cuál es tu segundo número? ");
+    num_2 = in.nextInt();
+    System.out.println("");
+
+    switch(parametro){
+      case 1 : resultado = num_1 + num_2;
+               System.out.println("La suma de tus números es: " + resultado);
+               break;
+
+      case 2 : resultado = num_1 - num_2;
+               System.out.println("La resta de tus números es: " + resultado);
+               break;
+ 
+      case 3 : resultado = num_1 * num_2;
+               System.out.println("La multiplicación de tus números es: " + resultado);
+               break;   
+
+      case 4 : resultado = num_1 / num_2;
+               System.out.println("La división de tus números es: " + resultado);
+               break;
+     
+      default : System.out.println("ERROR, EL PARÁMETRO QUE INGRESASTE ES INCORRECTO");
+
+
+
+
+
+    }
+ }
+}

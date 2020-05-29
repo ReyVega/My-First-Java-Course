@@ -1,0 +1,18 @@
+public class Vectores_Unidimensionales{
+  public static void main(String args[]){
+    
+    int vector[] = new int [5];
+    
+    vector[0] = 5; 
+    vector[1] = 220;
+    vector[2] = 8;
+    vector[3] = 458;
+    vector[4] = 22;
+
+    System.out.print("[" + vector[0] + "]");
+    System.out.print("[" + vector[1] + "]");
+    System.out.print("[" + vector[2] + "]"); 
+    System.out.print("[" + vector[3] + "]");
+    System.out.print("[" + vector[4] + "]");
+ } 
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Equals_2{
+  public static void main(String args[]){
+    
+    Scanner in = new Scanner(System.in);
+    String nombre = "", password = "";
+    
+    System.out.println("");
+    System.out.print("NOMBRE: ");
+    nombre = in.nextLine();
+
+    System.out.println("");
+
+    System.out.print("Password: ");
+    password = in.nextLine();
+
+    if(nombre.equals("Reynaldo") && password.equals("12345")){
+      System.out.println("");
+      System.out.println("Inicio de sesión correcto");
+    } else {
+      System.out.println("");
+      System.out.println("Nombre de usuario o Password incorrectos");
+    }
+ }
+}

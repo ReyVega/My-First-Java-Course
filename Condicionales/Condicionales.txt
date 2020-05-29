@@ -1,0 +1,14 @@
+public class Promedio{
+  public static void main(String args[]){
+    float quimica = 5;
+    float fisica  = 6;
+    float progra  = 5;
+    float promedio = 0;
+    promedio = (quimica + fisica + progra) / 3;
+    if(promedio >= 7){
+      System.out.println("Aprobó: " + promedio);
+    } else {
+      System.out.println("Reprobó: " + promedio);
+    }
+ }
+}

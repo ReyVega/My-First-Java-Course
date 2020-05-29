@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Cadena{
+  public static void main(String args[]){
+    
+    Scanner in = new Scanner(System.in);
+    String palabra = "", palabra_substraccion = "";
+    int num_caracteres = 0, desde = 0, hasta = 0;
+    
+    System.out.print("INGRESA TU PALABRA: ");
+    palabra = in.nextLine();
+    
+    num_caracteres = palabra.length();
+    System.out.println("");
+    System.out.println("La palabra " + palabra + " tiene " + num_caracteres + " caracteres");
+
+    System.out.println("");
+    System.out.print("¿Desde que caracter deseas obtener la nueva palabra? ");
+    desde = in.nextInt();
+    System.out.println("");
+    System.out.print("¿Hasta que caracter deseas obtener la nueva palabra? ");
+    hasta= in.nextInt();
+    
+    palabra_substraccion = palabra.substring(desde, hasta);
+
+    System.out.println("");
+    System.out.println(palabra_substraccion);
+ }
+}

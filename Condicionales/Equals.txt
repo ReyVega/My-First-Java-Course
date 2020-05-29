@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Equals{
+  public static void main(String args[]){
+
+    Scanner in = new Scanner(System.in);
+    String nombre_1 = "", nombre_2 = "";
+  
+    System.out.println("");
+    System.out.println("¿Cuál es tu primer nombre?");
+    nombre_1 = in.nextLine();
+    
+    System.out.println("");
+    System.out.println("¿Cuál es tu segundo nombre?");
+    nombre_2 = in.nextLine();
+
+    if(nombre_1.equalsIgnoreCase(nombre_2)){
+      System.out.println("");
+      System.out.println("Los nombres son iguales");
+    } else {
+      System.out.println("");
+      System.out.println("Los nombres son diferentes");
+    }
+ } 
+}

@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Vacaciones{
+  public static void main(String args[]){
+    
+    Scanner in = new Scanner(System.in);
+    String nombre = "";
+    int clave = 0, antiguo = 0;
+    
+    System.out.println("**********************************************");
+    System.out.println("*Bienvenido al sistema vacacional de Reynaldo*");
+    System.out.println("**********************************************");
+    System.out.println("");
+    System.out.println("");
+
+    System.out.print("¿Cuál es el nombre del trabajador?: ");
+    nombre = in.nextLine();
+    System.out.println("");
+
+    System.out.print("¿Cuántos años ha trabajado?: ");
+    antiguo = in.nextInt();
+    System.out.println("");
+
+    System.out.print("¿Cuál es la clave del departamento?: ");
+    clave = in.nextInt();
+    System.out.println("");
+
+    if(clave == 1){
+      if(antiguo == 1){
+        System.out.println(nombre + " tiene derecho a 6 días de vacaciones");
+      } else if(antiguo >= 2 && antiguo <= 6) {
+        System.out.println(nombre + " tiene derecho 14 días de vacaciones");
+      } else if(antiguo >=7){
+        System.out.println(nombre + " tiene derecho a 20 días de vacaciones");
+      } else {
+        System.out.println(nombre + " aún no tiene derecho a vacaciones");
+      }
+    } else if(clave == 2) {
+      if(antiguo == 1){
+        System.out.println(nombre + " tiene derecho a 7 días de vacaciones");
+      } else if(antiguo >= 2 && antiguo <= 6) {
+        System.out.println(nombre + " tiene derecho 15 días de vacaciones");
+      } else if(antiguo >=7){
+        System.out.println(nombre + " tiene derecho a 22 días de vacaciones");
+      } else {
+        System.out.println(nombre + " aún no tiene derecho a vacaciones");
+      }
+    } else if(clave == 3) {
+      if(antiguo == 1){
+        System.out.println(nombre + " tiene derecho a 10 días de vacaciones");
+      } else if(antiguo >= 2 && antiguo <= 6) {
+        System.out.println(nombre + " tiene derecho 20 días de vacaciones");
+      } else if(antiguo >=7){
+        System.out.println(nombre + " tiene derecho a 30 días de vacaciones");
+      } else {
+        System.out.println(nombre + " aún no tiene derecho a vacaciones");    
+      }
+    } else {
+      System.out.println("El número de clave que ingresó es incorrecto");
+    }
+ }
+}
